@@ -119,7 +119,11 @@ patient_data = [
     ('Avery Taylor', '199', 'Allergies', '08-04-2024'),
     ('Emma Hernandez', '200', 'Stomach Flu', '09-04-2024'),
 ]
-
+# Manually insert user records
+users_data = [
+    ('admin', 'Shreyas@123'),
+    # Add more users as needed
+]
 # Insert the data into the PATIENT table
 cursor.executemany('INSERT INTO PATIENT (NAME, ROOM, DISEASENAME, DATE_OF_ADMIT) VALUES (?, ?, ?, ?)', patient_data)
 
